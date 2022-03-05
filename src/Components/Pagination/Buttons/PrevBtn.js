@@ -1,5 +1,5 @@
 import React from "react";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../../context";
 
 const PrevButton = ({ hasPrev }) => {
     const { handlePage, page } = useGlobalContext();

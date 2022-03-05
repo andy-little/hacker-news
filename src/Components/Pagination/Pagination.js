@@ -1,7 +1,7 @@
 import React from "react";
-import GoToPage from "./GoToPage";
-import PrevButton from "./PrevBtn";
-import NextButton from "./NextBtn";
+import GoToPage from "./Buttons/GoToPage";
+import PrevButton from "./Buttons/PrevBtn";
+import NextButton from "./Buttons/NextBtn";
 import { useGlobalContext } from "../../context";
 
 const Pagination = () => {

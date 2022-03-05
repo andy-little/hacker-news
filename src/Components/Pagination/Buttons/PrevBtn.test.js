@@ -1,17 +1,17 @@
 import React from "react";
 import { screen, render } from "@testing-library/react";
-import Buttons from "./Buttons";
-import { AppProvider } from "../../context";
+import Navigation from "./Navigation";
+import { AppProvider } from "../../../context";
 
-const WrappedButtons = () => {
+const WrappedNavigation = () => {
     return (
         <AppProvider>
-            <Buttons></Buttons>
+            <Navigation></Navigation>
         </AppProvider>
     );
 };
 
 test("page one should not render previous button", () => {
-    render(<WrappedButtons />);
+    render(<WrappedNavigation />);
     expect(screen.queryByText(/previous/i)).not.toBeInTheDocument();
 });
