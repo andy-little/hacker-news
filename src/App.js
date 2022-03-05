@@ -15,7 +15,7 @@ function App() {
                     <Pagination />
                 </>
             ) : (
-                <h2>no results found</h2>
+                <h2 className="no-results">no results found</h2>
             )}
         </>
     );

@@ -324,3 +324,9 @@ PAGINATION
 .pagination-container {
     margin-right: 0.1rem;
 }
+
+.no-results {
+    width: 100%;
+    text-align: center;
+    color: rgb(119, 118, 118);
+}
