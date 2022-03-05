@@ -1,13 +1,14 @@
-import React from 'react'
-import SearchForm from './SearchForm'
-import Stories from './Stories'
-import Buttons from './Buttons'
+import React from "react";
+import { SearchForm, Stories, Buttons } from "./Components/";
+
 function App() {
-  return <>
-  <SearchForm/>
-  <Stories/>
-  <Buttons/>
-  </>
+    return (
+        <>
+            <SearchForm />
+            <Stories />
+            <Buttons />
+        </>
+    );
 }
 
-export default App
+export default App;
