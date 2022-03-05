@@ -4,3 +4,4 @@ export const REMOVE_STORY = "REMOVE_STORY";
 export const HANDLE_PAGE = "HANDLE_PAGE";
 export const HANDLE_SEARCH = "HANDLE_SEARCH";
 export const CLEAR_SEARCH = "CLEAR_SEARCH";
+export const IS_RESULTS = "IS_RESULTS";

@@ -7,6 +7,7 @@ import {
     HANDLE_PAGE,
     HANDLE_SEARCH,
     CLEAR_SEARCH,
+    IS_RESULTS,
 } from "./actions";
 
 const API_ENDPOINT = "https://hn.algolia.com/api/v1/search?";
@@ -17,6 +18,7 @@ const initialState = {
     numbPages: "",
     page: 0,
     query: "",
+    isResults: true,
 };
 
 const AppContext = React.createContext();
@@ -29,15 +31,22 @@ const AppProvider = ({ children }) => {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            //console.log(data);
-            dispatch({
-                type: SET_STORIES,
-                payload: {
-                    hits: data.hits,
-                    numbPages: data.nbPages,
-                    page: data.page,
-                },
+            const filteredData = data.hits.filter((story) => {
+                return story.title && story.url;
             });
+            if (filteredData.length === 0) {
+                dispatch({ type: IS_RESULTS, payload: false });
+            } else {
+                dispatch({
+                    type: SET_STORIES,
+                    payload: {
+                        hits: data.hits,
+                        numbPages: data.nbPages,
+                        page: data.page,
+                    },
+                });
+                dispatch({ type: IS_RESULTS, payload: true });
+            }
         } catch (error) {
             console.log(error);
         }

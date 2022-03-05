@@ -30,8 +30,8 @@ const Stories = () => {
                                 </a>
                                 <p className="info">{created_at}</p>
                                 <p className="info">
-                                    Author: <span>{author} |</span>{" "}
-                                    {num_comments} comments | {points} points{" "}
+                                    Author: <span>{author} |</span>
+                                    {num_comments} comments | {points} points
                                 </p>
                                 <a
                                     className="read-link"

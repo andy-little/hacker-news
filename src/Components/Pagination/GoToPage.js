@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ isCurrent, page, cb }) => {
+const GoToPage = ({ isCurrent, page, cb }) => {
     const colour = isCurrent ? "colour-r" : "colour-y";
     return (
         <div className="pagination-container">
@@ -24,4 +24,4 @@ const Button = ({ isCurrent, page, cb }) => {
     );
 };
 
-export default Button;
+export default GoToPage;
