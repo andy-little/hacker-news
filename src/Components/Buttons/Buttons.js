@@ -11,7 +11,7 @@ const Buttons = () => {
 
     if (!loading) {
         return (
-            <div className="pagination">
+            <nav className="pagination">
                 <PrevButton hasPrev={hasPrev} />
 
                 {page - 2 > 0 && (
@@ -41,7 +41,7 @@ const Buttons = () => {
                 )}
 
                 <NextButton hasNext={hasNext} page={page + 2} />
-            </div>
+            </nav>
         );
     }
     return null;
