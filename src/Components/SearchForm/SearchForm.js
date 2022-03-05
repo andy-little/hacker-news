@@ -6,22 +6,7 @@ import { RiCloseLine } from "react-icons/ri";
 const SearchForm = () => {
     const { query, handleSearch, clearSearch } = useGlobalContext();
     return (
-        <form
-            className="search-form main-title"
-            onSubmit={(e) => e.preventDefault()}
-        >
-            <h1 className="search-title">
-                <span className="colour-b">H</span>
-                <span className="colour-r">a</span>
-                <span className="colour-y">c</span>
-                <span className="colour-b">k</span>
-                <span className="colour-g">e</span>
-                <span className="colour-r">r </span>
-                <span className="colour-b"> N</span>
-                <span className="colour-r">e</span>
-                <span className="colour-y">w</span>
-                <span className="colour-g">s</span>
-            </h1>
+        <form className="search-form" onSubmit={(e) => e.preventDefault()}>
             <div className="input-container">
                 <label htmlFor="search" aria-label="search"></label>
                 <input

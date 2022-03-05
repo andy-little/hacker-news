@@ -1,9 +1,10 @@
 import React from "react";
-import { SearchForm, Stories, Buttons } from "./Components/";
+import { SearchForm, Stories, Buttons, Header } from "./Components/";
 
 function App() {
     return (
         <>
+            <Header />
             <SearchForm />
             <Stories />
             <Buttons />
