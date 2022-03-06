@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
     return (
         <div className="title-container">
-            <h1 className="search-title">
+            <h1 className="search-title" aria-label="hacker news logo">
                 <span className="colour-b">H</span>
                 <span className="colour-r">a</span>
                 <span className="colour-y">c</span>
