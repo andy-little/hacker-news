@@ -28,8 +28,6 @@ describe("pagination", () => {
             const prevBtn = screen.queryByText(/previous page/i);
             expect(prevBtn).not.toBeInTheDocument();
         });
-
-        //expect(prevBtn).toBeInTheDocument();
     });
     test("page one should render next button", async () => {
         render(<WrappedApp />);

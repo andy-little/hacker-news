@@ -10,7 +10,7 @@ import {
     IS_RESULTS,
 } from "./actions";
 
-const API_ENDPOINT = "https://hn.algolia.com/api/v1/search?";
+export const API_ENDPOINT = "https://hn.algolia.com/api/v1/search?";
 
 const initialState = {
     loading: true,
